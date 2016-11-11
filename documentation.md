@@ -1,7 +1,7 @@
 - Setup
     - [Installation](/docs/laravel-oci8/{{version}}/installation)
 - Getting Started
-    - [Auto-Increment](/docs/laravel-oci8/{{version}}/autoincrement)
+    - [Oracle Auto-Increment](/docs/laravel-oci8/{{version}}/autoincrement)
     - [Oracle Eloquent](/docs/laravel-oci8/{{version}}/oracle-eloquent)
     - [Oracle Blob Columns](/docs/laravel-oci8/{{version}}/blob)
     - [Oracle Sequence](/docs/laravel-oci8/{{version}}/sequence)
