@@ -1,4 +1,4 @@
-#Oracle Function
+# Oracle Function
 Before running the PHP program, create a stored function in SQL*Plus or SQL Developer:
 
 **SQL**

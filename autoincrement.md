@@ -1,4 +1,4 @@
-##Auto-Increment Support
+# Oracle Auto-Increment Support
 To support auto-increment in Laravel-OCI8, you must meet the following requirements:
 - Table must have a corresponding sequence with this format ```{$table}_{$column}_seq```
 - Sequence next value are executed before the insert query.

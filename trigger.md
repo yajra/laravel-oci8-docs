@@ -1,4 +1,4 @@
-#Oracle Trigger
+# Oracle Trigger
 Oracle Trigger can be loaded via `DB::getTrigger()`.
 
 ```php

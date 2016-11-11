@@ -1,3 +1,5 @@
+# Oracle Eloquent Model
+
 ### Updating Blob directly using OracleEloquent
 
 On your model, just add `use Yajra\Oci8\Eloquent\OracleEloquent as Eloquent`; and define the fields that are blob via `protected $binaries = [];`

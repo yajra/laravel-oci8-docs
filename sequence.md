@@ -1,5 +1,5 @@
+# Oracle Sequence
 
-##Oracle Sequence
 Oracle Sequence can be loaded via `DB::getSequence()`.
 
 ```php

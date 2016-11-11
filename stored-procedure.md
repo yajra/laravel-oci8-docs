@@ -1,4 +1,4 @@
-#Oracle Stored Procedure
+# Oracle Stored Procedure
 Before running the PHP program, create a stored procedure in SQL*Plus, SQL Developer or by migration:
 
 ##Creating the Procedure with Plain SQL

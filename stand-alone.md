@@ -1,4 +1,4 @@
-#Stand Alone Usage
+# Stand Alone Usage
 
 This documentation demonstrates how to use the package outside of Laravel.
 
