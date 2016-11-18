@@ -1,18 +1,19 @@
+- Prologue
+    - [Contribution Guide](/docs/{{package}}/{{version}}/contributing)
+    - [Security Issues](/docs/{{package}}/{{version}}/security)
 - Setup
-    - [Installation](/docs/laravel-oci8/{{version}}/installation)
+    - [Installation](/docs/{{package}}/{{version}}/installation)
 - Getting Started
-    - [Oracle Auto-Increment](/docs/laravel-oci8/{{version}}/autoincrement)
-    - [Oracle Eloquent](/docs/laravel-oci8/{{version}}/oracle-eloquent)
-    - [Oracle Blob Columns](/docs/laravel-oci8/{{version}}/blob)
-    - [Oracle Sequence](/docs/laravel-oci8/{{version}}/sequence)
-    - [Oracle Trigger](/docs/laravel-oci8/{{version}}/trigger)
-    - [Oracle Function](/docs/laravel-oci8/{{version}}/function)
-    - [Oracle Stored Procedure](/docs/laravel-oci8/{{version}}/stored-procedure)
-    - [Oracle Cursor](/docs/laravel-oci8/{{version}}/cursor)
-    - [Oracle Date Format](/docs/laravel-oci8/{{version}}/date-format)
+    - [Oracle Auto-Increment](/docs/{{package}}/{{version}}/autoincrement)
+    - [Oracle Eloquent](/docs/{{package}}/{{version}}/oracle-eloquent)
+    - [Oracle Blob Columns](/docs/{{package}}/{{version}}/blob)
+    - [Oracle Sequence](/docs/{{package}}/{{version}}/sequence)
+    - [Oracle Trigger](/docs/{{package}}/{{version}}/trigger)
+    - [Oracle Function](/docs/{{package}}/{{version}}/function)
+    - [Oracle Stored Procedure](/docs/{{package}}/{{version}}/stored-procedure)
+    - [Oracle Cursor](/docs/{{package}}/{{version}}/cursor)
+    - [Oracle Date Format](/docs/{{package}}/{{version}}/date-format)
 - Configuration
-    - [Package Options](/docs/laravel-oci8/{{version}}/general-settings)
+    - [Package Options](/docs/{{package}}/{{version}}/general-settings)
 - Advanced Options
-    - [Stand Alone Usage](/docs/laravel-oci8/{{version}}/stand-alone)
-- Others
-    - [Support](/docs/laravel-oci8/{{version}}/support)
+    - [Stand Alone Usage](/docs/{{package}}/{{version}}/stand-alone)
