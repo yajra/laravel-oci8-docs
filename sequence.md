@@ -17,13 +17,30 @@ $sequence->lastInsertId('seq_name');
 $sequence->exists('seq_name');
 ```
 
-##Incrementing Model using custom Sequence
+## Setting sequence start value
+
+```php
+$sequence = DB::getSequence();
+// create a sequence
+$sequence->create('seq_name', $start = 100);
+```
+
+## Setting sequence no cache option
+
+
+```php
+$sequence = DB::getSequence();
+// create a sequence
+$sequence->create('seq_name', $start = 1, $nocache = true);
+```
+
+## Incrementing Model using custom Sequence
 Since v5.2.2, we can now use a custom sequence to automatically increment our primary key without the need of a trigger.
 To use it, just simply add a `public $sequence = 'sequence_name` on your model and the package will automatically get the sequence value and assign to your primary key.
 
 This feature will address issues where tables and sequence already exists on your project.
 
-##Usage
+## Usage
 ```php
 class User extends Model {
     public $sequence = 'user_id_seq';
