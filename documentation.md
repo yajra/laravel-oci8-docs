@@ -6,6 +6,7 @@
     - [Installation](/docs/{{package}}/{{version}}/installation)
 
 - Getting Started
+    - [Community Links](/docs/{{package}}/{{version}}/community-links)
     - [Oracle Auto-Increment](/docs/{{package}}/{{version}}/autoincrement)
     - [Oracle Eloquent](/docs/{{package}}/{{version}}/oracle-eloquent)
     - [Oracle Blob Columns](/docs/{{package}}/{{version}}/blob)
