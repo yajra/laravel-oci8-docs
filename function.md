@@ -33,7 +33,11 @@ return $y; // prints 6
 **With shortcut Method** (https://github.com/yajra/laravel-oci8/pull/183/files)
 
 ```php
-
 $result = DB::executeFunction('function_name', ['binding_1' => 'hi', 'binding_n' => 'bye'], PDO::PARAM_LOB)
+```
 
+**MyFunc shortcut method:**
+
+```php
+DB::executeFunction('myfunc', ['p' => 3], PDO::PARAM_INT)
 ```
