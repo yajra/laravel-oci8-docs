@@ -25,7 +25,7 @@ This script will trigger Laravel-OCI8 to create the following DB objects
 - posts_id_seq (sequence)
 - posts_id_trg (trigger)
 
-##Auto-Increment Start With and No Cache Option
+## Auto-Increment Start With and No Cache Option
 - You can now set the auto-increment starting value by setting the `start` attribute.
 - If you want to disable cache, then add `nocache` attribute.
 
@@ -37,7 +37,7 @@ Schema::create('posts', function($table)
 }
 ```
 
-##Inserting Records Into A Table With An Auto-Incrementing ID
+## Inserting Records Into A Table With An Auto-Incrementing ID
 
 ```php
   $id = DB::connection('oracle')->table('users')->insertGetId(
