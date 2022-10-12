@@ -9,7 +9,7 @@ BEGIN
 END;
 ```
 
-##Creating the Procedure with migrations
+## Creating the Procedure with migrations
 ```
     /**
      * Run the migrations.
@@ -40,7 +40,7 @@ END;
     }
 ```
 
-##Running procedure the manual way
+## Running procedure the manual way
 ```php
 $pdo = DB::getPdo();
 $p1 = 8;
@@ -53,7 +53,7 @@ $stmt->execute();
 return $p2; // prints 16
 ```
 
-##Running procedure with shortcut method
+## Running procedure with shortcut method
 ```php
 $procedureName = 'youpackagename.yourprocedurename';
 
