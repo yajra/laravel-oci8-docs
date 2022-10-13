@@ -7,7 +7,7 @@ foreach ($data as $row) {
     echo $row->blobdata . '<br>';
 }
 ```
-##Inserting a blob via transaction
+## Inserting a blob via transaction
 
 ```php
 DB::transaction(function($conn){
@@ -22,7 +22,7 @@ DB::transaction(function($conn){
 });
 ```
 
-##Inserting Records Into A Table With Blob And Auto-Incrementing ID
+## Inserting Records Into A Table With Blob And Auto-Incrementing ID
 
 ```php
 $id = DB::table('mylobs')->insertLob(
@@ -32,7 +32,7 @@ $id = DB::table('mylobs')->insertLob(
 ```
 > **Note:** When using the insertLob method, you can specify the auto-incrementing column name as the third parameter in insertLob function. It will default to "id" if not specified.
 
-##Updating Records With A Blob
+## Updating Records With A Blob
 ```php
 $id = DB::table('mylobs')->whereId(1)->updateLob(
     array('name'=>'demo update blob'),
@@ -41,7 +41,7 @@ $id = DB::table('mylobs')->whereId(1)->updateLob(
 ```
 > **Note:** When using the insertLob method, you can specify the auto-incrementing column name as the third parameter in insertLob function. It will default to "id" if not specified.
 
-##Updating Blob directly using OracleEloquent
+## Updating Blob directly using OracleEloquent
 On your model, just add `use yajra\Oci8\Eloquent\OracleEloquent as Eloquent;` and define the fields that are blob via `protected $binaries = [];`
 
 *Example Model:*

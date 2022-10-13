@@ -1,11 +1,11 @@
-- Prologue
+- ## Prologue
     - [Contribution Guide](/docs/{{package}}/{{version}}/contributing)
     - [Security Issues](/docs/{{package}}/{{version}}/security)
 
-- Setup
+- ## Setup
     - [Installation](/docs/{{package}}/{{version}}/installation)
 
-- Getting Started
+- ## Getting Started
     - [Community Links](/docs/{{package}}/{{version}}/community-links)
     - [Oracle Auto-Increment](/docs/{{package}}/{{version}}/autoincrement)
     - [Oracle Eloquent](/docs/{{package}}/{{version}}/oracle-eloquent)
@@ -17,8 +17,8 @@
     - [Oracle Cursor](/docs/{{package}}/{{version}}/cursor)
     - [Oracle Date Format](/docs/{{package}}/{{version}}/date-format)
 
-- Configuration
+- ## Configuration
     - [Package Options](/docs/{{package}}/{{version}}/general-settings)
 
-- Advanced Options
+- ## Advanced Options
     - [Stand Alone Usage](/docs/{{package}}/{{version}}/stand-alone)
