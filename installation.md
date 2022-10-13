@@ -25,7 +25,7 @@ Laravel OCI8 can be installed with [Composer](http://getcomposer.org/doc/00-intr
 Run the following command in your project to get the latest version of the package:
 
 ```
-composer require yajra/laravel-oci8:^8.0
+composer require yajra/laravel-oci8:^7.0
 ```
 
 <a name="configuration"></a>
