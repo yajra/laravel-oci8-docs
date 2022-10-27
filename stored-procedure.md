@@ -1,7 +1,9 @@
 # Oracle Stored Procedure
+
 Before running the PHP program, create a stored procedure in SQL*Plus, SQL Developer or by migration:
 
-##Creating the Procedure with Plain SQL
+## Creating the Procedure with Plain SQL
+
 ```sql
 CREATE OR REPLACE PROCEDURE myproc(p1 IN NUMBER, p2 OUT NUMBER) AS
 BEGIN
@@ -10,6 +12,7 @@ END;
 ```
 
 ## Creating the Procedure with migrations
+
 ```
     /**
      * Run the migrations.
@@ -41,6 +44,7 @@ END;
 ```
 
 ## Running procedure the manual way
+
 ```php
 $pdo = DB::getPdo();
 $p1 = 8;
@@ -54,6 +58,7 @@ return $p2; // prints 16
 ```
 
 ## Running procedure with shortcut method
+
 ```php
 $procedureName = 'youpackagename.yourprocedurename';
 
