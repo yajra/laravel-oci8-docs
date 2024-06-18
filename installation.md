@@ -11,10 +11,8 @@
 <a name="server-requirements"></a>
 ### Server Requirements
 
-<div class="content-list" markdown="1">
-- PHP >= 5.6.4
+- PHP >= 8.2
 - OCI8 PHP Extension
-</div>
 
 <a name="installing-laravel-oci8"></a>
 ### Installing Laravel OCI8
