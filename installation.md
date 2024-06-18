@@ -16,7 +16,6 @@
 - OCI8 PHP Extension
 </div>
 
-
 <a name="installing-laravel-oci8"></a>
 ### Installing Laravel OCI8
 
@@ -25,7 +24,7 @@ Laravel OCI8 can be installed with [Composer](http://getcomposer.org/doc/00-intr
 Run the following command in your project to get the latest version of the package:
 
 ```
-composer require yajra/laravel-oci8:^10.0
+composer require yajra/laravel-oci8:^11.0
 ```
 
 <a name="configuration"></a>
