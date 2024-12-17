@@ -24,7 +24,7 @@ Usage:
 ```php
 Route::post('save-post', function()
 {
-    $post = new Post;`
+    $post = new Post;
     $post->title            = Input::get('title');
     $post->company_id       = Auth::user()->company->id;
     $post->slug             = Str::slug(Input::get('title'));
