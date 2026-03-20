@@ -1,3 +1,8 @@
+---
+title: "General Settings"
+description: "Configuration options for Laravel-OCI8 Oracle database connections."
+---
+
 # General Settings
 
 Configure your Oracle database connection settings for Laravel-OCI8.

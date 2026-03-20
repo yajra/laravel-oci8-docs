@@ -1,3 +1,8 @@
+---
+title: "Installation"
+description: "How to install and configure Laravel-OCI8 for Laravel and Lumen applications."
+---
+
 # Installation
 
 This guide walks you through installing and configuring Laravel-OCI8 in your Laravel or Lumen application.
@@ -30,7 +35,7 @@ If you don't see `oci8` in the output, you'll need to [install the OCI8 extensio
 Laravel-OCI8 is distributed as a Composer package. Run the following command in your project root to install the latest stable version:
 
 ```bash
-composer require yajra/laravel-oci8:"^13.0"
+composer require yajra/laravel-oci8:"^13"
 ```
 
 > **Note**: The `^13.0` constraint ensures you receive version 13.x of the package while remaining compatible with future minor versions. You can view more details on [Packagist](https://packagist.org/packages/yajra/laravel-oci8).

@@ -1,3 +1,8 @@
+---
+title: "Oracle Cursors"
+description: "Working with Oracle cursors for returning result sets from stored procedures."
+---
+
 # Oracle Cursors
 
 Cursors allow you to return result sets from stored procedures and functions. This guide shows how to work with cursors in Laravel-OCI8.

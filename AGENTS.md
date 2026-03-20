@@ -8,6 +8,25 @@ When working with this documentation repository, ALWAYS follow these rules:
 - **Read the `src` folder first** - This folder contains the actual code being documented
 - Never document methods that don't exist in the source code
 - Verify method signatures by grepping the codebase before documenting
+- **Always scan source code for undocumented features** - Before documenting, search for:
+  - New traits, methods, or properties in the source
+  - Compare source with existing documentation
+  - Document any method not yet documented
+  - Check return types, parameters, and enum support in the actual code
+
+### Frontmatter
+**ALWAYS add VitePress YAML frontmatter at the top of every documentation file.**
+
+```yaml
+---
+title: "Page Title"
+description: "Brief description for SEO"
+---
+```
+
+- Frontmatter must be the FIRST content in the file (before any headings)
+- Include appropriate description for SEO
+- The `title` in frontmatter should match the H1 heading
 
 ### Heading Anchors
 **ALWAYS add `<a name="anchor-id"></a>` anchors before each `##` heading.**
@@ -30,13 +49,13 @@ When working with this documentation repository, ALWAYS follow these rules:
 ### Code Examples
 - Keep examples simple and developer-friendly
 - Use the latest PHP syntax (PHP 8.3+)
-- Use `App\Models\User` not `App\User`
 - Ensure examples are copy-paste friendly
 
 ### Version Constraints
-- Use `^13` for Laravel-OCI8 version constraints
-- The package follows Laravel's major version: Laravel 13 → Laravel-OCI8 13
+- Use `^13` for laravel-oci8 version constraints
+- The package follows Laravel's major version: Laravel 13 → laravel-oci8 13
 
 ### File Consistency
 - When merging content, remove the old file and update `documentation.md`
+- When creating a document, add it to `documentation.md`
 - When adding content, add anchors—don't remove existing ones

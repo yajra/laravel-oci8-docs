@@ -1,3 +1,8 @@
+---
+title: "Oracle Stored Procedures"
+description: "Calling Oracle stored procedures from PHP with Laravel-OCI8."
+---
+
 # Oracle Stored Procedures
 
 Stored procedures allow you to execute business logic directly in the Oracle database. This guide covers creating and calling stored procedures in Laravel-OCI8.

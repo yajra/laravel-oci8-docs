@@ -1,3 +1,8 @@
+---
+title: "License"
+description: "MIT License terms for Laravel-OCI8."
+---
+
 # License
 
 ```

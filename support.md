@@ -1,3 +1,8 @@
+---
+title: "Support"
+description: "Support resources and troubleshooting for Laravel-OCI8."
+---
+
 # Support
 
 Laravel-OCI8 integrates seamlessly with Laravel's database system. This guide shows how to establish Oracle database connections in your application.

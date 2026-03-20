@@ -1,3 +1,8 @@
+---
+title: "Oracle Eloquent Model"
+description: "Extend OracleEloquent class for Oracle-specific Eloquent features."
+---
+
 # Oracle Eloquent Model
 
 Extend Laravel-OCI8's `OracleEloquent` class to unlock Oracle-specific features in your Eloquent models.

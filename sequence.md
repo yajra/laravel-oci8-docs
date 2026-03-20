@@ -1,3 +1,8 @@
+---
+title: "Oracle Sequence"
+description: "Managing Oracle sequences for auto-incrementing IDs and more."
+---
+
 # Oracle Sequence
 
 Oracle sequences are database objects that generate sequential numbers. Laravel-OCI8 provides a convenient API for managing sequences.
@@ -70,16 +75,6 @@ When creating a sequence, you can specify the starting value:
 
 ```php
 $sequence->create('seq_name', start: 100);
-```
-
-This creates a sequence that begins at 100.
-
-## Creating a Sequence with No Cache
-
-By default, Oracle caches sequence values for performance. To disable caching:
-
-```php
-$sequence->create('seq_name', nocache: true);
 ```
 
 This creates a sequence that begins at 100.

@@ -1,3 +1,8 @@
+---
+title: "Date Formatting"
+description: "How Laravel-OCI8 handles Oracle date and timestamp format conversion."
+---
+
 # Date Formatting
 
 Oracle stores dates and timestamps differently than PHP. Laravel-OCI8 handles the conversion automatically by setting the default session format to `YYYY-MM-DD HH24:MI:SS` to match PHP's common date format.

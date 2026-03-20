@@ -1,3 +1,8 @@
+---
+title: "Oracle Auto-Increment Support"
+description: "Configure auto-incrementing primary keys in Oracle using sequences and triggers."
+---
+
 # Oracle Auto-Increment Support
 
 Oracle databases don't support auto-increment columns natively like MySQL or PostgreSQL. Instead, Laravel-OCI8 uses **sequences** and **triggers** to achieve the same functionality.

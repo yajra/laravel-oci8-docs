@@ -1,3 +1,8 @@
+---
+title: "Oracle Functions"
+description: "Calling Oracle stored functions from PHP with Laravel-OCI8."
+---
+
 # Oracle Functions
 
 Stored functions allow you to execute business logic directly in the database and return values to your PHP application.

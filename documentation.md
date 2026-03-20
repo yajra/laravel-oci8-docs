@@ -1,3 +1,8 @@
+---
+title: "Documentation"
+description: "Laravel-OCI8 documentation index."
+---
+
 - ## Prologue
     - [Contribution Guide](/docs/{{package}}/{{version}}/contributing)
     - [Security Issues](/docs/{{package}}/{{version}}/security)

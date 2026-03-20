@@ -1,3 +1,8 @@
+---
+title: "Oracle BLOB Support"
+description: "How Laravel-OCI8 handles Oracle BLOB (Binary Large Object) fields."
+---
+
 # Oracle BLOB Support
 
 Laravel-OCI8 provides special handling for Oracle BLOB (Binary Large Object) fields. When querying a BLOB field, the value is automatically loaded instead of the raw OCI-Lob object.

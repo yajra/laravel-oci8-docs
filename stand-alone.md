@@ -1,3 +1,8 @@
+---
+title: "Stand-Alone Usage"
+description: "Using Laravel-OCI8 outside Laravel/Lumen with Capsule Manager."
+---
+
 # Stand-Alone Usage
 
 Laravel-OCI8 can be used outside of Laravel or Lumen by leveraging Laravel's Capsule Manager. This enables you to use Oracle database functionality in any PHP project.

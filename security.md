@@ -1,3 +1,8 @@
+---
+title: "Security"
+description: "Security policy and best practices for Laravel-OCI8."
+---
+
 # Security
 
 Security is important. If you discover a security vulnerability within Laravel-OCI8, please report it responsibly.

@@ -1,3 +1,8 @@
+---
+title: "Oracle Triggers"
+description: "Working with Oracle database triggers for auto-increment and more."
+---
+
 # Oracle Triggers
 
 Oracle triggers are database objects that automatically execute in response to certain events on a table. Laravel-OCI8 provides a simple API for managing triggers.

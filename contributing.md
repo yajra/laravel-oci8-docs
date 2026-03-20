@@ -1,3 +1,13 @@
+---
+title: "Contributing Guide"
+description: "How to contribute to Laravel-OCI8 development."
+---
+
+---
+title: "Contributing Guide"
+description: "How to contribute to Laravel-OCI8 development."
+---
+
 # Contributing
 
 We welcome contributions from the community! This guide explains how to get involved with Laravel-OCI8 development.

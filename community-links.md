@@ -1,3 +1,8 @@
+---
+title: "Community Links"
+description: "Connect with the Laravel-OCI8 community and find resources."
+---
+
 # Community Links
 
 Connect with the Laravel-OCI8 community and find additional resources.

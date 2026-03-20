@@ -1,3 +1,8 @@
+---
+title: "Laravel OCI8 Documentation"
+description: "Documentation index for Laravel-OCI8 package."
+---
+
 # Laravel OCI8 Documentation
 
 ## Contribution Guidelines
