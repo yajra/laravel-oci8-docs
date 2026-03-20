@@ -1,17 +1,22 @@
 # Oracle Auto-Increment Support
-To support auto-increment in Laravel-OCI8, you must meet the following requirements:
-- Table must have a corresponding sequence with this format ```{$table}_{$column}_seq```
-- Sequence next value are executed before the insert query.
 
-***********
+Oracle databases don't support auto-increment columns natively like MySQL or PostgreSQL. Instead, Laravel-OCI8 uses **sequences** and **triggers** to achieve the same functionality.
 
-> **Note:** If you will use [Laravel Migration](http://laravel.com/docs/migrations) feature, the required sequence and a trigger will automatically be created. Please also note that **trigger, sequence and indexes name will be truncated to 30 chars** when created via [Schema Builder](http://laravel.com/docs/schema) hence there might be cases where the naming convention would not be followed. I suggest that you limit your object name not to exceed 20 chars as the builder added some naming convention on it like _seq, _trg, _unique, etc...
+<a name="requirements"></a>
+## Requirements
 
-***********
+To use auto-increment in Laravel-OCI8, you must meet these requirements:
+
+1. **Sequence**: Your table must have a corresponding sequence named using the format `{table}_{column}_seq`
+2. **Trigger**: The sequence's next value must be executed before the insert query
+
+<a name="automatic-setup"></a>
+## Automatic Setup with Laravel Migrations
+
+When using Laravel's Schema Builder, the required sequence and trigger are automatically created for you:
 
 ```php
-Schema::create('posts', function($table)
-{
+Schema::create('posts', function ($table) {
     $table->increments('id');
     $table->string('title');
     $table->string('slug');
@@ -20,29 +25,51 @@ Schema::create('posts', function($table)
 });
 ```
 
-This script will trigger Laravel-OCI8 to create the following DB objects
-- posts (table)
-- posts_id_seq (sequence)
-- posts_id_trg (trigger)
+This migration creates the following Oracle objects:
 
-## Auto-Increment Start With and No Cache Option
-- You can now set the auto-increment starting value by setting the `start` attribute.
-- If you want to disable cache, then add `nocache` attribute.
+| Object Type | Name | Description |
+|-------------|------|-------------|
+| Table | `posts` | The main data table |
+| Sequence | `posts_id_seq` | Generates sequential IDs |
+| Trigger | `posts_id_trg` | Automatically sets the ID on insert |
+
+> **Important**: Oracle object names are truncated to 30 characters. If your table/column names are long, the naming convention may not be followed exactly. We recommend limiting table and column names to 20 characters or fewer to avoid conflicts with the suffixes added by the Schema Builder (`_seq`, `_trg`, `_unique`, etc.).
+
+<a name="custom-start-value"></a>
+## Custom Start Value and No Cache
+
+You can customize the auto-increment behavior:
 
 ```php
-Schema::create('posts', function($table)
-{
+Schema::create('posts', function ($table) {
+    // Start auto-increment at 10,000 and disable cache
     $table->increments('id')->start(10000)->nocache();
     $table->string('title');
-}
+});
 ```
 
-## Inserting Records Into A Table With An Auto-Incrementing ID
+### Available Options
+
+| Method | Description |
+|--------|-------------|
+| `->start($value)` | Sets the starting value for the sequence |
+| `->nocache()` | Disables sequence caching (default: caches 20 values) |
+
+<a name="inserting-records"></a>
+## Inserting Records
+
+When inserting records with an auto-incrementing ID, use the `insertGetId` method:
 
 ```php
-  $id = DB::connection('oracle')->table('users')->insertGetId(
-      array('email' => 'john@example.com', 'votes' => 0), 'userid'
-  );
+$id = DB::connection('oracle')->table('users')->insertGetId(
+    ['email' => 'john@example.com', 'votes' => 0],
+    'userid'
+);
 ```
 
-> **Note:** When using the insertGetId method, you can specify the auto-incrementing column name as the second parameter in insertGetId function. It will default to "id" if not specified.
+> **Note**: The second parameter specifies the auto-incrementing column name. If omitted, it defaults to `id`.
+
+<a name="working-with-custom-sequences"></a>
+## Working with Custom Sequences
+
+If your table already has an existing sequence, see the [Oracle Sequence documentation](sequence) for information on using custom sequences with your models.
